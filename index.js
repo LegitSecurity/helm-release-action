@@ -63,8 +63,8 @@ function push() {
 // Returns argument required to install helm-s3 and helm-pack plugins.
 function installPlugins() {
   const plugins = [
-    'https://github.com/hypnoglow/helm-s3.git',
-    'https://github.com/thynquest/helm-pack.git',
+    'https://github.com/hypnoglow/helm-s3.git@70cdba9d40af4c68f7c5df8f5e473ecd79a08b35',
+    'https://github.com/thynquest/helm-pack.git@305923f71ea143284a322cfe4ac3afa9f8838288',
   ];
 
   return Promise.all(plugins.map(plugin => exec.exec(HELM, ['plugin', 'install', plugin])));
