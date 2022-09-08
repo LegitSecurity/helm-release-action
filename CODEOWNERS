@@ -1,0 +1,4 @@
+* @LegitSecurity/Legit-Reviewers
+/.github/ @LegitSecurity/legit-reviewers-devops
+/helm/ @LegitSecurity/legit-reviewers-devops
+/Dockerfile @LegitSecurity/legit-reviewers-devops
