@@ -22,10 +22,7 @@ inputs:
     description: Helm package command extra arguments.
     required: false
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.version }}
-    - ${{ inputs.chart }}
-    - ${{ inputs.repo }}
-    - ${{ inputs.forceRelease }}
+  using: 'composite'
+  steps:
+    - run: node ./index.js ${{ inputs.chart }} ${{ inputs.repo }}
+      shell: bash
