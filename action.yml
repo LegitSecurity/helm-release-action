@@ -24,5 +24,8 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # avoid shallow clone so nbgv can do its work.
     - run: node ./index.js ${{ inputs.chart }} ${{ inputs.repo }}
       shell: bash
