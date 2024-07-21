@@ -21,6 +21,6 @@
   "homepage": "https://github.com/shellbear/helm-release-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/exec": "^1.0.4"
+    "@actions/exec": "^1.1.1"
   }
 }
